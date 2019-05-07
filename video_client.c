@@ -1,12 +1,3 @@
-/*
- *  V4L2 video capture example
- *
- *  This program can be used and distributed without restrictions.
- *
- *      This program is provided with the V4L2 API
- * see https://linuxtv.org/docs.php for more information
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
