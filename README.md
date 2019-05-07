@@ -27,6 +27,31 @@ Initially the frame size was around 600 kb. No frames were received on the other
 
 When only one client is connected, the video data seemed to be performing better in one-way than the two-way connection in the chat system. This is also due to the bandwidth issue. 
 
+### How to run
+To start the video serever.
+
+*gcc video_server.c -o vid_ser -lSDLmain -lSDL -lSDL_image `sdl-config --cflags --libs`*  
+
+*./vid_ser*
+
+To start the audio server:
+
+*gcc audio_server.c -o aud_ser -lpulse -lpulse-simple*
+
+*./aud_ser*
+
+To start the video client:
+
+*gcc video_client.c -o vid_cli*
+
+*./vid_cli*
+
+To start the audio client:
+
+*gcc audio_client.c -o aud_cli -lpulse -lpulse-simple*
+
+*./aud_cli*
+
 ### Acknowledgements
 Thanks to Prof.Girish Kumar for providing us the support in implementing the project. 
 
